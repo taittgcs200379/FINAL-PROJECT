@@ -1487,7 +1487,7 @@ MonoBehaviour:
   shootforce: 30
   upwardforce: 0
   damage: 100
-  timeBetweenShooting: 1.5
+  timeBetweenShooting: 1
   spread: 5
   range: 20
   reloadTime: 1.25
@@ -7257,7 +7257,7 @@ MonoBehaviour:
   shootforce: 75
   upwardforce: 0
   damage: 50
-  timeBetweenShooting: 0.1
+  timeBetweenShooting: 0.25
   spread: 1
   range: 20
   reloadTime: 1.25
@@ -10633,7 +10633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 444.00012, y: -241.5}
+  m_AnchoredPosition: {x: 372, y: -194.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595807247
