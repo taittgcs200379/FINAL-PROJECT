@@ -36,7 +36,7 @@ public class PickUpFunction : MonoBehaviour
 
     private void Update()
     {
-        //Check if player is in range and "E" is pressed
+        //Check if player is in range and "F" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.F) && !slotFull) PickUp();
 
