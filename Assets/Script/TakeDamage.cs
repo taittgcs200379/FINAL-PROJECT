@@ -6,13 +6,16 @@ using UnityEngine;
 using TMPro;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Data;
+
 public class TakeDamage : MonoBehaviour
 {
     // Start is called before the first frame update
     public static int playerHP = 100;
     public static int currHP;
-    public TextMeshProUGUI playerHPText;
     
+    public HealthBar healthBar;
     public static bool isGameover;
    
     
@@ -22,10 +25,11 @@ public class TakeDamage : MonoBehaviour
         isGameover = false;
         currHP = playerHP;
        
+        
     }
      public void Update()
     {
-        playerHPText.text = "health:" + currHP;
+        
         
         if (isGameover )
         {
@@ -35,9 +39,11 @@ public class TakeDamage : MonoBehaviour
         
         
     }
-    public static void GetDamage(int damage)
+    public void GetDamage(int damage)
     {
         currHP -=damage;
+        healthBar.SetHealth(currHP);
+        
         if (currHP <= 0 )
         {
             isGameover = true;
@@ -46,14 +52,17 @@ public class TakeDamage : MonoBehaviour
         
         
     }
-    public static void Heal(int amount)
+    public  void Heal(int amount)
     {
         currHP += amount;
-        if(currHP > playerHP) 
+        healthBar.SetHealth(currHP);
+        if (currHP > playerHP) 
         {
             currHP = playerHP;
         }
         
     }
     
+    
+
 }

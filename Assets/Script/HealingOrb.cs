@@ -7,6 +7,7 @@ public class HealingOrb : MonoBehaviour
     public int regain;
     public float radius = 1f;
     public GameObject Orb;
+    public TakeDamage takeDamage;
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -16,7 +17,7 @@ public class HealingOrb : MonoBehaviour
         {
             if (collider.gameObject.tag.Equals ("Player"))
             {
-                TakeDamage.Heal(regain);
+                takeDamage.Heal(regain);
                 // Destroy(collision.gameObject);
                 Invoke(nameof(DestroyOrb),0.001f);
             }

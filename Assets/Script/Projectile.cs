@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     
     public int damage;
     public EnemyAi ai;
+    public TakeDamage takeDamage;
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -15,7 +16,7 @@ public class Projectile : MonoBehaviour
 
         if (collision.gameObject.tag.Equals("Player"))
         {
-            TakeDamage.GetDamage(damage);
+            takeDamage.GetDamage(damage);
         }
     }
 }
