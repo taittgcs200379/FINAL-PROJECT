@@ -6,7 +6,7 @@ public class Trap : MonoBehaviour
 {
     // Start is called before the first frame update
     public int damage;
-    
+    public TakeDamage takeDamage;
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -15,7 +15,7 @@ public class Trap : MonoBehaviour
 
         if (collision.gameObject.tag.Equals("Player"))
         {
-            TakeDamage.GetDamage(damage);
+            takeDamage.GetDamage(damage);
         }
     }
 }
