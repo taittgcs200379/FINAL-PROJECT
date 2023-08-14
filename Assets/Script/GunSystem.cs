@@ -162,9 +162,14 @@ public class GunSystem : MonoBehaviour
         }
         
     }
+    public void Bonus(int amount)
+    {
+        currentmaxAmmo += amount;
+    }
     private void ReloadFinished()
     {
         bulletsLeft = magazineSize;
         reloading = false;
     }
+
 }
