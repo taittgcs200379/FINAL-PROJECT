@@ -1,29 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using Unity.PlasticSCM.Editor.WebApi;
+//using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using TMPro;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Data;
+using System.Runtime.CompilerServices;
 
 public class TakeDamage : MonoBehaviour
 {
     // Start is called before the first frame update
     public static int playerHP = 100;
     public static int currHP;
-    
     public HealthBar healthBar;
     public static bool isGameover;
-   
+    [SerializeField] GameObject player;
+    [SerializeField] List<GameObject> checkPoint;
+    [SerializeField] Vector3  isRespawn;
+
     
 
      public void Start()
     {
         isGameover = false;
         currHP = playerHP;
+       
        
         
     }
@@ -34,8 +38,10 @@ public class TakeDamage : MonoBehaviour
         if (isGameover )
         {
           SceneManager.LoadScene("SampleScene");
-          
+         //player.transform.position = isRespawn;
+            
         }
+        
         
         
     }
@@ -47,8 +53,9 @@ public class TakeDamage : MonoBehaviour
         if (currHP <= 0 )
         {
             isGameover = true;
-            
+           
         }
+       
         
         
     }
@@ -62,7 +69,15 @@ public class TakeDamage : MonoBehaviour
         }
         
     }
-    
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (currHP <= 0 && other.gameObject.CompareTag("CheckPoint"))
+
+        {
+            isRespawn = player.transform.position;
+        }
+    }
+
 
 }

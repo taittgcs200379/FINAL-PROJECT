@@ -18,7 +18,7 @@ public class HealingOrb : MonoBehaviour
             if (collider.gameObject.tag.Equals ("Player"))
             {
                 takeDamage.Heal(regain);
-                // Destroy(collision.gameObject);
+                
                 Invoke(nameof(DestroyOrb),0.001f);
             }
         }
