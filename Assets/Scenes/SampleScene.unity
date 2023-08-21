@@ -23501,7 +23501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientation: {fileID: 1157697721}
-  rb: {fileID: 0}
+  rb: {fileID: 1457628194}
   pm: {fileID: 1457628188}
   whatIsWall:
     serializedVersion: 2
