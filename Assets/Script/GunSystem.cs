@@ -148,17 +148,17 @@ public class GunSystem : MonoBehaviour
         
         if ((magazineSize - bulletsLeft) <= currentmaxAmmo)
         {
+            
             currentmaxAmmo -= (magazineSize - bulletsLeft);
             bulletsLeft += (magazineSize - bulletsLeft);
-            Invoke("ReloadFinished", reloadTime);
             reloading = true;
-           
+            Invoke(nameof(ReloadFinished), reloadTime);
         }
-        else
+        else 
         {
             bulletsLeft += currentmaxAmmo;
             currentmaxAmmo = 0;
-            reloading= false;
+            reloading = false;
         }
         
     }
@@ -168,8 +168,9 @@ public class GunSystem : MonoBehaviour
     }
     private void ReloadFinished()
     {
-        bulletsLeft = magazineSize;
         reloading = false;
+        //bulletsLeft=magazineSize;
+        
     }
 
 }

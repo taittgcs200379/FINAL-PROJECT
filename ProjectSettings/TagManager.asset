@@ -9,6 +9,7 @@ TagManager:
   - Door
   - CheckPonint
   - CheckPoint
+  - Enemy Bullet
   layers:
   - Default
   - TransparentFX
