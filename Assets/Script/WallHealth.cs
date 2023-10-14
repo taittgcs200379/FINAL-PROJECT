@@ -9,7 +9,7 @@ public class WallHealth : MonoBehaviour
     public int currHP;
     public GameObject wall;
     public bool isGameover;
-
+    public int damage;
 
 
     public void Start()
@@ -43,8 +43,13 @@ public class WallHealth : MonoBehaviour
 
         }
 
-
-
+    }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("Enemy Bullet"))
+        {
+            GetDamage(damage);
+        }
     }
     private void DestroyWall()
     {
