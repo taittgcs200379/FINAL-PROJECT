@@ -17,10 +17,7 @@ public class TakeDamage : MonoBehaviour
     public static int currHP;
     public HealthBar healthBar;
     public static bool isGameover;
-    [SerializeField] GameObject player;
-    [SerializeField] List<GameObject> checkPoint;
-    [SerializeField] Vector3  isRespawn;
-
+   
     
 
      public void Start()
@@ -70,14 +67,7 @@ public class TakeDamage : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (currHP <= 0 && other.gameObject.CompareTag("CheckPoint"))
-
-        {
-            isRespawn = player.transform.position;
-        }
-    }
+    
 
 
 }

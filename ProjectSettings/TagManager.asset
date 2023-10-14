@@ -10,6 +10,7 @@ TagManager:
   - CheckPonint
   - CheckPoint
   - Enemy Bullet
+  - Gun
   layers:
   - Default
   - TransparentFX

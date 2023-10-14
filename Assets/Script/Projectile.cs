@@ -10,10 +10,6 @@ public class Projectile : MonoBehaviour
     public TakeDamage takeDamage;
     private void OnCollisionEnter(Collision collision)
     {
-
-        
-        
-
         if (collision.gameObject.tag.Equals("Player"))
         {
             takeDamage.GetDamage(damage);

@@ -10,9 +10,6 @@ public class Trap : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-
-
-
         if (collision.gameObject.tag.Equals("Player"))
         {
             takeDamage.GetDamage(damage);
