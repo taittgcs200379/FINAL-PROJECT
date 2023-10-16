@@ -11,6 +11,7 @@ TagManager:
   - CheckPoint
   - Enemy Bullet
   - Gun
+  - Box
   layers:
   - Default
   - TransparentFX
