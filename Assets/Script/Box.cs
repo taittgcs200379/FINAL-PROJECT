@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
+   
     
     private void OnCollisionEnter(Collision collision)
     {
-
-            if (collision.gameObject.tag.Equals("Box"))
+        
+            if (collision.gameObject.tag.Equals("Bullet"))
             {
-                DestroyBox();
-            }
+            Invoke(nameof(DestroyBox), 0.001f);
+        }   
     }
     private void DestroyBox()
     {
         Destroy(gameObject);
     }
+
 }
