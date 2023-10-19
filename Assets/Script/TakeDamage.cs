@@ -13,8 +13,8 @@ using System.Runtime.CompilerServices;
 public class TakeDamage : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static int playerHP = 100;
-    public static int currHP;
+    public int playerHP;
+    public int currHP;
     public HealthBar healthBar;
     public static bool isGameover;
    

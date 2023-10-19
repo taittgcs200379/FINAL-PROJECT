@@ -8,7 +8,7 @@ public class WallHealth : MonoBehaviour
     public int wallHP ;
     public int currHP;
     public GameObject wall;
-    public bool isGameover;
+    public static bool isGameover;
     public int damage;
 
 
