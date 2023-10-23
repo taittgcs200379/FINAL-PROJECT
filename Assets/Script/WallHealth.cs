@@ -7,14 +7,13 @@ public class WallHealth : MonoBehaviour
 {
     public int wallHP ;
     public int currHP;
-    public GameObject wall;
-    public static bool isGameover;
+ 
     public int damage;
 
 
     public void Start()
     {
-        isGameover = false;
+        
         currHP = wallHP;
 
 
@@ -23,12 +22,6 @@ public class WallHealth : MonoBehaviour
     public void Update()
     {
 
-
-        if (isGameover)
-        {
-            DestroyWall();
-
-        }
 
 
 
@@ -39,7 +32,7 @@ public class WallHealth : MonoBehaviour
         
         if (currHP <= 0)
         {
-            isGameover = true;
+            DestroyWall();
 
         }
 
