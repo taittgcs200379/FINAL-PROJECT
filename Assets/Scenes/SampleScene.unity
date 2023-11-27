@@ -4623,7 +4623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &128176093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33918,7 +33918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &633813854
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50305,7 +50305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &828578373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58866,7 +58866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &1004516758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64007,7 +64007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &1113453363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70365,7 +70365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &1248511612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88012,7 +88012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.930466
+      value: -22.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalPosition.y
@@ -88020,23 +88020,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.710045
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -88044,7 +88044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6409fb7750997fc40b41f3507c72d578, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -98575,7 +98575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallHP: 2000
   currHP: 0
-  damage: 1000
+  damage: 100
 --- !u!65 &1728276602
 BoxCollider:
   m_ObjectHideFlags: 0
