@@ -15,17 +15,17 @@ public class EnemyAi : MonoBehaviour
 
    
   
-    //Patroling
+ 
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
 
-    //Attacking
+
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public GameObject projectile;
 
-    //States
+  
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
     
@@ -37,7 +37,7 @@ public class EnemyAi : MonoBehaviour
 
     private void Update()
     {
-        //Check for sight and attack range
+        // sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
@@ -78,7 +78,7 @@ public class EnemyAi : MonoBehaviour
 
     private void AttackPlayer()
     {
-        //Just a ray through the middle of your current view
+        
       
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
@@ -87,11 +87,11 @@ public class EnemyAi : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            ///Attack code here
+            ///Attack code 
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 1f, ForceMode.Impulse);
-            ///End of attack code
+            ///Reattack
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
