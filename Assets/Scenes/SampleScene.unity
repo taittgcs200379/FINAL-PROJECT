@@ -8444,8 +8444,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186356357}
   m_LocalRotation: {x: -0, y: -0.31597888, z: -0, w: 0.94876623}
-  m_LocalPosition: {x: 26.643, y: 9.6448, z: -34.6015}
-  m_LocalScale: {x: 25.951004, y: 12.3643265, z: 0.9012665}
+  m_LocalPosition: {x: 26.643, y: 9.5273, z: -34.6015}
+  m_LocalScale: {x: 25.951004, y: 12.129404, z: 0.9012665}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1556045671}
@@ -52105,7 +52105,8 @@ GameObject:
   - component: {fileID: 875612131}
   - component: {fileID: 875612130}
   - component: {fileID: 875612129}
-  m_Layer: 7
+  - component: {fileID: 875612132}
+  m_Layer: 0
   m_Name: Heal orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52190,6 +52191,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875612127}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &875612132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875612127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ca57f8e6a879e429994c708028aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regain: 100
+  radius: 1
+  Orb: {fileID: 0}
+  takeDamage: {fileID: 0}
 --- !u!1 &880642499
 GameObject:
   m_ObjectHideFlags: 0
@@ -90575,7 +90592,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32034
+  m_Name: pb_Mesh32058
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -92107,7 +92124,8 @@ GameObject:
   - component: {fileID: 1616012940}
   - component: {fileID: 1616012939}
   - component: {fileID: 1616012938}
-  m_Layer: 7
+  - component: {fileID: 1616012941}
+  m_Layer: 0
   m_Name: Heal orb (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92192,6 +92210,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616012936}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1616012941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616012936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ca57f8e6a879e429994c708028aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regain: 100
+  radius: 1
+  Orb: {fileID: 0}
+  takeDamage: {fileID: 0}
 --- !u!1 &1618008874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1319cfeb42068a446bc5d43ef1562670, type: 3}
@@ -100016,7 +100050,8 @@ GameObject:
   - component: {fileID: 1744536444}
   - component: {fileID: 1744536443}
   - component: {fileID: 1744536442}
-  m_Layer: 7
+  - component: {fileID: 1744536445}
+  m_Layer: 0
   m_Name: heal orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100101,6 +100136,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744536440}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1744536445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744536440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ca57f8e6a879e429994c708028aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regain: 100
+  radius: 1
+  Orb: {fileID: 0}
+  takeDamage: {fileID: 0}
 --- !u!1 &1744908793
 GameObject:
   m_ObjectHideFlags: 0
