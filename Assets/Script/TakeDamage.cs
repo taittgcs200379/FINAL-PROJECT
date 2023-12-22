@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-//using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using TMPro;
 using JetBrains.Annotations;
@@ -12,7 +11,7 @@ using System.Runtime.CompilerServices;
 
 public class TakeDamage : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public int playerHP;
     public int currHP;
     public HealthBar healthBar;
